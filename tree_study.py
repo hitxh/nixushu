@@ -18,7 +18,7 @@ def inorder(node):
         if node.left:               # 有左子叶  继续递归调用
             inorder(node.left)
             node.show()
-        elif not node.left:         # 没有左子叶 输出当前数据
+        else:         # 没有左子叶 输出当前数据
            node.show()
         if node.right:               #
             inorder(node.right)
@@ -29,7 +29,7 @@ def rinorder(node):
         if node.right:
             rinorder(node.right)
             node.show()
-        elif not node.right:
+        else:
             node.show()
         if node.left:
             rinorder(node.left)
